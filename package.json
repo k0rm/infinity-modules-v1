@@ -1,19 +1,32 @@
 {
-  "name": "infinity-modules",
-  "version": "0.1.0",
+  "name": "infinity-modules-korm",
+  "version": "0.1.5",
   "private": true,
+  "description": "Testing NPM publish",
+  "author": "Kormákur Hjaltason <kormakur20@ru.is>",
+  "keywords": ["react", "react-styling", "components"],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist", "README.md"],
+  "respository": {
+    "type": "git",
+    "url": "git+"
+  }
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "sass-loader": "^12.6.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +47,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2"
   }
 }

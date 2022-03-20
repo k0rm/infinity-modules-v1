@@ -1,0 +1,33 @@
+
+.CartoonNetworkSpinner {
+    height: 150px;
+    width: 150px;
+}
+
+.imageContainer {
+    height: 150px;
+    width: 150px;
+}
+
+.cn {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: Spinner 3s linear infinite;
+    border-radius: 50%;
+    max-height: 300px;
+    max-width: 300px;
+    height: auto;
+    width: auto;
+
+}
+
+@keyframes Spinner {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

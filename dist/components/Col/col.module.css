@@ -1,0 +1,69 @@
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 8.333vh;
+    background-color: blue;
+    border: 0.1vw solid;
+    flex-wrap: wrap;
+}
+
+.c12 {
+    composes: col;
+    width: 99.8vw;
+}
+
+.c11 {
+    composes: col;
+    width: 91.474vw;
+}
+
+.c10 {
+    composes: col;
+    width: 83.2vw;
+}
+
+.c9 {
+    composes: col;
+    width: 74.806vw;
+}
+
+.c8 {
+    composes: col;
+    width: 66.472vw;
+}
+
+.c7 {
+    composes: col;
+    width: 58.138vw;
+}
+
+.c6 {
+    composes: col;
+    width: 49.798vw;
+}
+
+.c5 {
+    composes: col;
+    width: 41.665vw;
+}
+
+.c4 {
+    composes: col;
+    width: 33.13vw;
+}
+
+.c3 {
+    composes: col;
+    width: 24.8vw;
+}
+
+.c2 {
+    composes: col;
+    width: 16.466vw;
+}
+
+.c1 {
+    composes: col;
+    width: 8.133vw;
+}
